@@ -6,6 +6,7 @@
     [Address]      VARCHAR (200) NULL,
     [DepartmentId] INT           IDENTITY (1, 1) NOT NULL,
     [EmployeeCode] VARCHAR (50)  NULL,
+    [Age] INT NULL, 
     CONSTRAINT [PK_Table_1] PRIMARY KEY CLUSTERED ([Id] ASC),
     CONSTRAINT [FK_Employee_Department] FOREIGN KEY ([DepartmentId]) REFERENCES [dbo].[Department] ([Id])
 );
